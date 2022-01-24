@@ -1,0 +1,149 @@
+:root {
+  --orange: hsl(26, 100%, 55%);
+  --pale-orange: hsl(25, 100%, 94%);
+  --very-dark-blue: hsl(220, 13%, 13%);
+  --dark-grayish-blue: hsl(219, 9%, 45%);
+  --grayish-blue: hsl(220, 14%, 75%);
+  --light-grayish-blue: hsl(223, 64%, 98%);
+}
+
+* {
+  margin: 0;
+}
+
+.container {
+  padding: 0 8rem;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  justify-content: space-between;
+  min-height: 6rem;
+  border-bottom: 1px solid var(--grayish-blue);
+  margin-bottom: 4rem;
+}
+
+ul.nav-list {
+  list-style-type: none;
+  gap: 2rem;
+  color: var(--dark-grayish-blue);
+  font-size: 1rem;
+}
+
+.logo {
+  margin-right: 8px;
+}
+
+button {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.avatar {
+  margin-left: 32px;
+}
+
+.main {
+  padding: 0 4rem;
+  gap: 8rem;
+}
+
+.thumnail-item > img {
+  max-width: 100px;
+}
+
+.thumnail-list {
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.photos img {
+  border-radius: 8px;
+}
+
+.counter > .btn {
+  padding: 16px;
+  background-color: var(--light-grayish-blue);
+}
+
+.number {
+  padding: 16px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.company-name {
+  text-transform: uppercase;
+  color: var(--orange);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.product-name {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.product-desc {
+  color: var(--dark-grayish-blue);
+  margin-bottom: 1.5rem;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-right: 2rem;
+}
+.discount {
+  padding: 4px 8px;
+  color: var(--orange);
+  font-weight: 700;
+  background-color: var(--pale-orange);
+  border-radius: 6px;
+}
+
+.origin-price {
+  color: var(--grayish-blue);
+  margin-top: 0.5rem;
+  text-decoration: line-through;
+  margin-bottom: 1rem;
+}
+
+.bottom {
+  gap: 1rem;
+}
+
+.add-to-cart-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: var(--orange);
+  flex-grow: 1;
+  padding: 1rem;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+.add-to-cart-btn > span {
+  margin-left: 16px;
+}
+
+.add-to-cart-btn > img {
+  fill: white;
+}
